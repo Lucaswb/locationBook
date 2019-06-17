@@ -5,40 +5,50 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Address Book</title>
+  <title>location log</title>
 </head>
 <body>
     <div class="container">
-      <h1>Address Book</h1>
+      <h1>Location Log</h1>
       <div class="row">
         <div class="col-md-6">
           <hr>
-          <h2>Add a Contact:</h2>
-          <form id="new-contact">
+          <h2>Add a visited place:</h2>
+          <form id="new-location">
             <div class="form-group">
-              <label for="new-first-name">First Name</label>
-              <input type="text"  class="form-control" id="new-first-name">
+              <label for="new-country">Country name</label>
+              <input type="text"  class="form-control" id="new-country">
             </div>
             <div class="form-group">
-              <label for="new-last-name">Last Name</label>
-              <input type="text"  class="form-control" id="new-last-name">
+              <label for="new-cityName">City name</label>
+              <input type="text"  class="form-control" id="new-cityName">
             </div>
             <div class="form-group">
-              <label for="new-phone-number">Phone Number</label>
-              <input type="text"  class="form-control" id="new-phone-number">
+              <label for="new-landmarks">landmarks</label>
+              <input type="text"  class="form-control" id="new-landmarks">
+            </div>
+            <div class="form-group">
+              <label for="new-date">date (dd-mm-yyyy)</label>
+              <input type="text"  class="form-control" id="new-date">
+            </div>
+            <div class="form-group">
+              <label for="new-notes">notes: </label>
+              <input type="text"  class="form-control" id="new-notes">
             </div>
             <button type="submit" class="btn-primary">Add</button>
           </form>
           <hr>
-          <h2>Contacts:</h2>
-          <ul id="contacts">
+          <h2>Places visited</h2>
+          <ul id="places">
           </ul>
         </div>
         <div class="col-md-6">
-          <div id="show-contact">
-            <p>First Name: <span class="first-name"></span></p>
-            <p>Last Name: <span class="last-name"></span></p>
-            <p>Phone Number: <span class="phone-number"></span></p>
+          <div id="show-place">
+            <p>Country: <span class="country"></span></p>
+            <p>City Name: <span class="cityName"></span></p>
+            <p>landmarks: <span class="landmarks"></span></p>
+            <p>date: <span class="date"></span></p>
+            <p>notes: <span class="notes"></span></p>
             <div id="buttons">
             </div>
           </div>
